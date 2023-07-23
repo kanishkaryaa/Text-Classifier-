@@ -1,1 +1,5 @@
-# Text-Classifier-
+Text Classifier built using the existing neural network package provided by tensorflow at "https://tfhub.dev/google/nnlm-en-dim50/2" which works with 50 embedding dimesions. For a more complex model, the same NN architecture is available with 128 embedded dimensions. Dataset used is imdb_reviews which is directly downloaded using the tensorlow_datasets(imported as tsdf) in the the notebook having a size of apporximately 82 MegaBytes. 
+The text in the dataset is not pre processed and is processed by the neural network at the time of learning.
+The dataset contains around 50,000 entries which is split into train and test data each of which, contains 25,000 entries each
+The datasets contains text(str) which represents the reviews and labels as either 0 or 1. 0 indicates a negative review whereas 1 indicates a positive review.
+The accuracy score of the model is 86.41% which can be increased by using more complex optimizers though here, binary crossentropy is applied along with the adam optimizer.
